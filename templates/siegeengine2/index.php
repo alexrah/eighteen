@@ -150,7 +150,8 @@ include_once JPATH_THEMES . '/' . $this->template . '/framework.php';
   <!--[if lte IE 8]>  <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/js/respond.js"></script> <![endif]-->
   
   <script>
-    $(document).foundation();
+
+    jQuery(document).foundation();
   </script>
   <?php if ($analytics != "UA-XXXXX-X") : ?>
 <!-- http://mths.be/aab -->

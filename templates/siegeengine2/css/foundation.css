@@ -2812,7 +2812,7 @@ label.error {
   height: 45px;
   line-height: 45px;
   position: relative;
-  background: #111111;
+  /* background: #111111; */
   margin-bottom: 1.875em; }
   .top-bar ul {
     margin-bottom: 0;
@@ -2877,15 +2877,16 @@ label.error {
           display: block;
           width: 16px;
           height: 0;
-          -webkit-box-shadow: 0 10px 0 1px white, 0 16px 0 1px white, 0 22px 0 1px white;
-          box-shadow: 0 10px 0 1px white, 0 16px 0 1px white, 0 22px 0 1px white; }
+          -webkit-box-shadow: 0 10px 0 1px #888888, 0 16px 0 1px #888888, 0 22px 0 1px #888888;
+          box-shadow: 0 10px 0 1px #888888, 0 16px 0 1px #888888, 0 22px 0 1px #888888; }
+
   .top-bar.expanded {
     height: auto;
     background: transparent; }
     .top-bar.expanded .title-area {
       background: #111111; }
     .top-bar.expanded .toggle-topbar a {
-      color: #888888; }
+      color: #69A84F; }
       .top-bar.expanded .toggle-topbar a span {
         -webkit-box-shadow: 0 10px 0 1px #888888, 0 16px 0 1px #888888, 0 22px 0 1px #888888;
         box-shadow: 0 10px 0 1px #888888, 0 16px 0 1px #888888, 0 22px 0 1px #888888; }
@@ -2999,9 +3000,9 @@ label.error {
 .js-generated {
   display: block; }
 
-@media only screen and (min-width: 58.75em) {
+@media only screen and (min-width: 38.75em) {
   .top-bar {
-    background: #111111;
+    background: #69A84F;
     *zoom: 1;
     overflow: visible; }
     .top-bar:before, .top-bar:after {
@@ -3024,7 +3025,7 @@ label.error {
       position: relative;
       top: 8px; }
     .top-bar.expanded {
-      background: #111111; }
+      background: none; }
 
   .contain-to-grid .top-bar {
     max-width: 62.5em;
@@ -4585,6 +4586,9 @@ a.th {
     top: 50%;
     margin-top: -5px; } }
 @media only screen and (max-width: 767px) {
+  .top-bar{
+    /* background: #69A84F; */
+  }
   .f-dropdown {
     max-width: 100%;
     left: 0; } }

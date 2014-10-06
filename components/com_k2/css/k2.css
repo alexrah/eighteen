@@ -44,7 +44,9 @@ body.contentpane #k2Container {padding:16px;} /* used in popups */
 .odd {background:#fff;padding:2px;border-bottom:1px dotted #ccc;}
 
 /* --- RSS feed icon --- */
-div.k2FeedIcon {padding:4px 8px;}
+div.k2FeedIcon {padding:4px 8px;
+  display: none;
+}
 div.k2FeedIcon a,
 div.k2FeedIcon a:hover {display:block;float:right;margin:0;padding:0;width:16px;height:16px;background:url(../images/fugue/feed.png) no-repeat 50% 50%;}
 div.k2FeedIcon a span,
@@ -191,10 +193,14 @@ div.itemImageBlock {padding:8px;margin:0 0 16px 0;}
 	span.itemImageCaption {color:#666;float:left;display:block;font-size:11px;}
 	span.itemImageCredits {color:#999;float:right;display:block;font-style:italic;font-size:11px;}
 
-div.itemIntroText {color:#444;font-size:18px;font-weight:bold;line-height:24px;padding:4px 0 12px 0;}
+div.itemIntroText {color:#444;font-size:18px;font-weight:bold;line-height:24px;padding:4px 0 12px 0;
+text-align: center;
+}
 	div.itemIntroText img {}
 
-div.itemFullText {}
+div.itemFullText {
+  text-align: justify;
+}
 	div.itemFullText h3 {margin:0;padding:16px 0 4px 0;}
 	div.itemFullText p {}
 	div.itemFullText img {}
@@ -382,6 +388,11 @@ div.itemListSubCategories {}
 div.itemList {}
 	div#itemListLeading {}
 	div#itemListPrimary {}
+  @media screen and (min-width: 820px){
+  .homepage  div#itemListPrimary {
+    margin: 0 20%;
+  }
+}
 	div#itemListSecondary {}
 	div#itemListLinks {background:#f7fafe;border:1px solid #ddd;margin:8px 0;padding:8px;}
 
@@ -405,7 +416,13 @@ span.catItemEditLink a:hover {background:#ffffcc;}
 
 div.catItemHeader {}
 	div.catItemHeader span.catItemDateCreated {color:#999;font-size:11px;}
-	div.catItemHeader h3.catItemTitle {font-family:Georgia, "Times New Roman", Times, serif;font-size:24px;font-weight:normal;line-height:110%;padding:10px 0 4px 0;margin:0;}
+	div.catItemHeader h3.catItemTitle {font-family:Georgia, "Times New Roman", Times, serif;font-size:24px;font-weight:normal;line-height:110%;
+    padding:10px 10px 4px 10px;
+    margin:0;
+  }
+ div.catItemHeader h3.catItemTitle {
+  text-align: center;
+ }
 	div.catItemHeader h3.catItemTitle span {}
 	div.catItemHeader h3.catItemTitle span sup {font-size:12px;color:#CF1919;text-decoration:none;} /* superscript */
 	div.catItemHeader span.catItemAuthor {display:block;padding:0;margin:0;}
@@ -421,7 +438,13 @@ div.catItemImageBlock {padding:8px;margin:0 0 16px 0;}
 	span.catItemImage {display:block;text-align:center;margin:0 0 8px 0;}
 	span.catItemImage img {border:1px solid #ccc;padding:8px;}
 
-div.catItemIntroText {font-size:inherit;font-weight:normal;line-height:inherit;padding:4px 0 12px 0;}
+div.catItemIntroText {font-size:inherit;font-weight:normal;line-height:inherit;padding:4px 10px 12px 10px;
+  text-align: justify;
+}
+div.catItemIntroText {
+  text-align: center;
+  margin: 0 10%;
+}
 	div.catItemIntroText img {}
 
 div.catItemExtraFields, div.genericItemExtraFields {margin:16px 0 0 0;padding:8px 0 0 0;border-top:1px dotted #ddd;}
@@ -431,7 +454,9 @@ div.catItemExtraFields, div.genericItemExtraFields {margin:16px 0 0 0;padding:8p
 	div.catItemExtraFields ul li span.catItemExtraFieldsLabel, div.genericItemExtraFields ul li span.genericItemExtraFieldsLabel {display:block;float:left;font-weight:bold;margin:0 4px 0 0;width:30%;}
 	div.catItemExtraFields ul li span.catItemExtraFieldsValue {}
 
-div.catItemLinks {margin:0 0 16px 0;padding:0;}
+div.catItemLinks {
+  /* margin:0 0 16px 0;padding:0; */
+}
 
 div.catItemHitsBlock {padding:4px;border-bottom:1px dotted #ccc;}
 	span.catItemHits {}
@@ -469,9 +494,17 @@ div.catItemCommentsLink {display:inline;margin:0 8px 0 0;padding:0 8px 0 0;borde
 	div.catItemCommentsLink a:hover {}
 
 /* Read more link */
-div.catItemReadMore {display:inline;}
+div.catItemReadMore {display:inline;
+  padding: 10px;
+}
 	div.catItemReadMore a {}
 	div.catItemReadMore a:hover {}
+
+div.catItemReadMore {
+  display: block;
+  text-align: center;
+  font-size: 1.5em;
+}
 
 /* Modified date */
 span.catItemDateModified {display:block;text-align:right;padding:4px;margin:4px 0;color:#999;border-top:1px solid #ddd;}

@@ -38,7 +38,12 @@ ul.sigProElegant li.sigProThumb a.sigProLink:hover img.sigProImg { display:block
 
 /* Caption */
 ul.sigProElegant span.sigProPseudoCaption,
-ul.sigProElegant span.sigProCaption { display:block; position:absolute; bottom:0; left:0; right:0; text-align:center; padding:4px 0 0; font-size:11px; font-weight:normal; font-family:Georgia, "Times New Roman", Times, serif; }
+ul.sigProElegant span.sigProCaption {
+display:block; position:absolute; bottom:0; left:0; right:0; text-align:center; padding:4px 0 0; font-size:11px; font-weight:normal;
+/* font-family:Georgia, "Times New Roman", Times, serif; */
+font-family: Arial, sans-serif;
+
+}
 ul.sigProElegant span.sigProPseudoCaption { background:#f4f2ed; }
 ul.sigProElegant li.sigProThumb a.sigProLink:hover span.sigProPseudoCaption { background:#333; }
 ul.sigProElegant span.sigProPseudoCaption b { visibility:hidden; }

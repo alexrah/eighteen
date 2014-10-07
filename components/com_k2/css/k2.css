@@ -193,13 +193,14 @@ div.itemImageBlock {padding:8px;margin:0 0 16px 0;}
 	span.itemImageCaption {color:#666;float:left;display:block;font-size:11px;}
 	span.itemImageCredits {color:#999;float:right;display:block;font-style:italic;font-size:11px;}
 
-div.itemIntroText {color:#444;font-size:18px;font-weight:bold;line-height:24px;padding:4px 0 12px 0;
+div.itemIntroText {color:#444;font-size:18px;font-weight:bold;line-height:24px;padding:4px 10% 12px ;
 text-align: center;
 }
 	div.itemIntroText img {}
 
 div.itemFullText {
   text-align: justify;
+  padding: 0 10%;
 }
 	div.itemFullText h3 {margin:0;padding:16px 0 4px 0;}
 	div.itemFullText p {}

@@ -6,12 +6,13 @@
 /* typography, colours etc */
 
 body {
-	font-family: 'Source Sans Pro', sans-serif;
+ /* font-family: 'Source Sans Pro', sans-serif; */
 	color:#2C3E50;
-  background-image: url('../images/background.png');
+  background: url('../images/background.png') no-repeat center center ;
+  background-size: cover;
 }
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Source Sans Pro', sans-serif;
+  /* font-family: 'Source Sans Pro', sans-serif; */
 }
 p {
 	margin-bottom: 0.5em;	
@@ -39,7 +40,8 @@ ul, ol {
 /*menu */
 
 .top-bar, .top-bar.expanded .title-area {
-	background: none;	
+	background: none;
+  margin-bottom: 0;
 
 }
 .top-bar.expanded .title-area  {
@@ -352,6 +354,7 @@ max-width: none;
 .slogan h1, header h1 {
   color: #69A84F;
   text-align: center;
+  font-size: 2em;
 }
 
 .subtitle {
@@ -374,9 +377,22 @@ footer {
   padding: 1% 5%;
 }
 
+#paper {
+  background: url('../images/linedpaper.png') ;
+  /* background-color: rgba(255,255,255, 0.8); */
+  box-shadow: 2px 2px 2px darkgreen;
+  border-radius: 3px;
+  padding: 0 10px;
+}
+
+
 #credits {
   color: white;
   font-size: 0.8em;
+}
+
+#credits a {
+  color: #64C5F0;
 }
 
 iframe {

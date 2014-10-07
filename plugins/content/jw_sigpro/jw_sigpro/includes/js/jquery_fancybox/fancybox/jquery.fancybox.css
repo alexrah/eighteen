@@ -201,7 +201,8 @@
 /* Title helper */
 
 .fancybox-title {
-	visibility: hidden;
+	/* visibility: hidden; */
+  display: none;
 	font: normal 13px/20px "Helvetica Neue",Helvetica,Arial,sans-serif;
 	position: relative;
 	text-shadow: none;
@@ -209,7 +210,8 @@
 }
 
 .fancybox-opened .fancybox-title {
-	visibility: visible;
+	/* visibility: visible; */
+  display: none;
 }
 
 .fancybox-title-float-wrap {

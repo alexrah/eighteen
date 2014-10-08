@@ -8,6 +8,10 @@ div.mod-languages li {
 	margin-right: 5px;
 }
 
+.lt-ie9 div.mod-languages ul.lang-inline li {
+  display: inline-block;
+}
+
 div.mod-languages ul.lang-inline li {
 	display:inline;
 }
